@@ -5,14 +5,7 @@ import { ThemeWrapper } from '@/app/_theme/ThemeWrapper';
 import { Header } from '@/app/_components/shared/header/Header';
 import { Footer } from '@/app/_components/shared/footer/footer';
 
-import { Nunito } from 'next/font/google';
-
-const nunito = Nunito({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-  weight: ['600', '800'],
-});
+import '@/app/_styles/style.css';
 
 export default function RootLayout({
   children,
@@ -25,8 +18,8 @@ export default function RootLayout({
       <html lang="en">
         <head></head>
         <ThemeWrapper>
-          <body className={nunito.className}>
-            <Stack gap={3.75} py={3} px={1}>
+          <body>
+            <Stack gap={3.75} py={3} px={2}>
               <Header />
               <Box component="main">{children}</Box>
               <Footer />

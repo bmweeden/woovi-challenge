@@ -34,6 +34,9 @@ declare module '@mui/material/styles' {
 }
 
 export const BaseTheme = createTheme({
+  typography: {
+    fontFamily: `'Nunito', sans-serif`,
+  },
   palette: {
     green: {
       dark: '#03D69D',
