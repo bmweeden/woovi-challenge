@@ -1,5 +1,15 @@
+import { Box } from '@mui/material';
+
+import { SubHeader } from '@/app/_components/shared/sub-header/SubHeader';
+
 const page = () => {
-  return <span>Page 3</span>;
+  return (
+    <>
+      <Box component="section">
+        <SubHeader title="João, pague o restante em 1x no cartão" />
+      </Box>
+    </>
+  );
 };
 
 export default page;
