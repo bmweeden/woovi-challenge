@@ -1,9 +1,14 @@
-import { Box } from '@mui/material';
+import { Stack } from '@mui/material';
 
 type SectionProps = {
   children: React.ReactNode;
+  gap?: number;
 };
 
-export const Section = ({ children }: SectionProps) => {
-  return <Box component="section">{children}</Box>;
+export const Section = ({ children, gap }: SectionProps) => {
+  return (
+    <Stack component="section" gap={gap}>
+      {children}
+    </Stack>
+  );
 };
